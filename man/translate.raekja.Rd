@@ -21,12 +21,14 @@ translate.raekja()
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+Returns a data set with English for column names.
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
 %%  ~~who you are~~
+Paul Frater <pnf1@hi.is>
 }
 \note{
 %%  ~~further notes~~
@@ -38,24 +40,8 @@ translate.raekja()
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function () 
-{
-    raekja <- rename(raekja, id = visir, ship.number = skipnr, 
-        gear.type = veidarf, gridcell = reitur, smagridcell = reitur, 
-        depth = dypi, landing.port = lhofn, year = ar, fishing.day = vedags, 
-        fishing.month = veman, landing.month = lman, landing.day = ldags, 
-        trawl.time = togtimi, bottom.temp = botnhiti, harbor = hoflina, 
-        mesh.size = moskvi, sensor = nemi, number.per.kilo = fjikilo, 
-        size = staerd, type = gerd, bottom = ibotni, gear.type.two = tvo.veidarf, 
-        trawl.window = legggluggi, trawl.bag = leggpokki, trawl.name = nafn.vorpu, 
-        gear.type.two.l = tvo.veidarf.1, greenland.halibut = graluda, 
-        redfish = karfi, shrimp = raekja, cod = torskur, )
-  }
+shrimp.trawl <- translate.raekja()
+names(shrimp.trawl)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

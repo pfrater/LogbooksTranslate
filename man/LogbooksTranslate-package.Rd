@@ -9,20 +9,25 @@
 \packageDescription{LogbooksTranslate}
 }
 \details{
-This package will translate most column names from most data sets found in the Logbooks package from Icelandic to English.
+
+The DESCRIPTION file:
+\packageDESCRIPTION{LogbooksTranslate}
+\packageIndices{LogbooksTranslate}
+This package is to be used in conjunction with the Logbooks package put out by the Icelandic Marine Research Institute. Use this package to translate the column names of the datasets in Logbooks from Icelandic to English.
+
+
 }
 \author{
-\packageAuthor{LogbooksTranslate} Paul Frater <pnf1@hi.is>
+\packageAuthor{LogbooksTranslate}
 
-Maintainer: \packageMaintainer{LogbooksTranslate} Paul Frater <pnf1@hi.is>
-}
-\references{
+Maintainer: \packageMaintainer{LogbooksTranslate}
 }
 \keyword{ package }
 \seealso{
+
 }
 \examples{
-bottom.trawls <- translate.botnv();
-names(bottom.trawls);
-translation(visir, vedags, gear.type, ship.number)
+bottom.trawls <- translate.botnv()
+names(bottom.trawls)
+check.names(visir, vedags, gear.type, landing.day) 
 }

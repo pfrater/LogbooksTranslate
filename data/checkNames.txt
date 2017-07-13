@@ -74,7 +74,6 @@ ship.size	brl
 shrimp	raekja
 size	staerd
 skates	skata
-smagridcell	reitur
 small.gridcell	smareitur
 spotted.catfish	hlyri
 sq.meters	fermetrar

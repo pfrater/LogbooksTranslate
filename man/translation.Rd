@@ -15,6 +15,7 @@ translation(...)
 \arguments{
   \item{\dots}{
 %%     ~~Describe \code{\dots} here~~
+Arguments should be entered as unquoted column names either in English, Icelandic, or combination of both. 
 }
 }
 \details{
@@ -26,12 +27,14 @@ translation(...)
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+A data.frame of the entered names is returned showing the column names in both English and Icelandic.
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
 %%  ~~who you are~~
+Paul Frater
 }
 \note{
 %%  ~~further notes~~
@@ -43,19 +46,7 @@ translation(...)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (...) 
-{
-    data(checkNames)
-    nameList <- as.list(sys.call())
-    name <- unlist(nameList[2:length(nameList)])
-    return(filter(checkNames, icelandic \%in\% name | english \%in\% 
-        name))
-  }
+translations(visir, vedags, gear.type, gridcell)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -7,6 +7,7 @@ translate.stofn
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This package translates the column names in the stofn data set from Icelandic to English
 }
 \usage{
 translate.stofn()
@@ -21,12 +22,14 @@ translate.stofn()
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+Returns a data set with English for column names.
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
 %%  ~~who you are~~
+Paul Frater <pnf1@hi.is>
 }
 \note{
 %%  ~~further notes~~
@@ -38,16 +41,8 @@ translate.stofn()
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function () 
-{
-    stofn <- rename(stof, id = visir, gridcell = reitur, year = ar, 
-        gear.type = veidarf, )
-  }
+refs <- translate.stofn()
+names(refs)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

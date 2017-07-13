@@ -1,7 +1,7 @@
 # functions to check names of translated column names
 # sometimes it is handy to go back and see what a column name was translated from
 require(dplyr)
-translation <- function(...) {
+check.names.lb <- function(...) {
 	data(checkNames)
 	nameList <- as.list(sys.call())
     name <- unlist(nameList[2:length(nameList)])

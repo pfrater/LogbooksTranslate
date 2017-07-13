@@ -7,6 +7,7 @@ translate.handf
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This package translates the column names in the handf data set from Icelandic to English
 }
 \usage{
 translate.handf()
@@ -21,12 +22,14 @@ translate.handf()
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+Returns a data set with English for column names.
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
 %%  ~~who you are~~
+Paul Frater <pnf1@hi.is>
 }
 \note{
 %%  ~~further notes~~
@@ -38,20 +41,8 @@ translate.handf()
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function () 
-{
-    handf <- rename(handf, id = visir, ship.number = skipnr, 
-        gear.type = veidarf, gridcell = reitur, small.gridcell = smareitur, 
-        depth = dypi, landing.port = lhofn, year = ar, fishing.day = vedags, 
-        fishing.month = veman, landing.month = lman, landing.day = ldags, 
-        hour = klst, gear = faeri, bottom.temp = botnhiti, catfish = steinbitur, 
-        cod = torskur, saithe = ufsi, haddock = ysa, )
-  }
+handline <- translate.handf()
+names(handline)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -7,6 +7,7 @@ translate.dragnot
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+This package translates the column names in the dragnot data set from Icelandic to English
 }
 \usage{
 translate.dragnot()
@@ -21,12 +22,14 @@ translate.dragnot()
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+Returns a data set with English for column names.
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
 %%  ~~who you are~~
+Paul Frater <pnf1@hi.is>
 }
 \note{
 %%  ~~further notes~~
@@ -38,25 +41,8 @@ translate.dragnot()
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function () 
-{
-    dragnot <- rename(dragnot, id = visir, ship.number = skipnr, 
-        gear.type = veidarf, gridcell = reitur, smagridcell = reitur, 
-        depth = dypi, landing.port = lhofn, year = ar, fishing.day = vedags, 
-        fishing.month = veman, landing.month = lman, landing.day = ldags, 
-        bottom = ibotni, mesh.size = moskvi, wire.length = virle, 
-        trawl.length = togle, bottom.temp = botnhiti, flatfish = flatf, 
-        gray.sole = langlura, halibut = luda, whiting = lysa, 
-        common.dab = sandkoli, plaice = skarkoli, skates = skata, 
-        monkfish = skotus, rough.dab = skrapfl, catfish = steinbitur, 
-        megrim = storkj, cod = torskur, lemon.sole = tylura, 
-        saithe = ufsi, haddock = ysa, )
-  }
+danish.seine <- translate.dragnot()
+names(danish.seine)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
