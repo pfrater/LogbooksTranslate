@@ -1,0 +1,6 @@
+visir
+lat
+lon
+reitur
+ar
+veidarf

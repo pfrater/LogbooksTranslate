@@ -1,0 +1,12 @@
+icelandic	english
+botnv	bottom.trawl
+dragnot	danish.seine
+flotv	pelagic.trawl
+handf	jigging
+humar	nephrops.trawl
+lina	long.line
+lodna	capelin
+net	gillnet
+raekja	shrimp.trawl
+sild	herring
+skipaskra	ship

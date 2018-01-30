@@ -1,7 +1,3 @@
-# functions to translate column names of the datasets found in Logbooks from Icelandic to English
-require(dplyr)
-
-
 # column names for botnv 
 translate.botnv <- function() {
 	botnv <- rename(botnv,	

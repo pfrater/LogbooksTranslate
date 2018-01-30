@@ -1,9 +1,18 @@
 Package: LogbooksTranslate
 Type: Package
-Title: Translator for the Logbooks package
-Version: 1.0
-Date: 2016-06-07
-Author: Paul Frater
+Title: Translator for Logbooks package
+Version: 1.0.0
+Date: 2017-01-26
+Author: Paul Frater <pnf1@hi.is>
 Maintainer: Paul Frater <pnf1@hi.is>
-Description: Translates column names for data sets found in the Logbooks package from Icelandic to English.
-License: IDK
+Description: This package translates the column names in most of the datasets in the 
+    Logbooks package from Icelandic to English
+Imports: 
+Suggests:
+    Logbooks,
+    testthat,
+    knitr,
+    rmarkdown
+License: MIT
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr

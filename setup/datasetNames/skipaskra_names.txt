@@ -1,0 +1,11 @@
+skip.nr
+einkst
+einknr
+flokkur
+heimah
+heiti
+brl
+lengd
+simi
+eigandi
+rek.adili
