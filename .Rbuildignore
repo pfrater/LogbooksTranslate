@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 setup
 notes
+^\.travis\.yml$
