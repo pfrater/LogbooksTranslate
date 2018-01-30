@@ -1,0 +1,44 @@
+---
+title: "Introduction to Logbooks Translate"
+author: "Paul Frater"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Logbooks Translate}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+``` {r setup, include = FALSE}
+library(LogbooksTranslate)
+```
+
+# Translation Function
+
+Logbooks translate is a simple package with a simple purpose -- to translate the column names of data.frames in the Logbooks package put out by the Icelandic MFRI. The data.frames in this package are in Icelandic, and logbooksTranslate gives you the English version.
+
+LogbooksTranslate has two functions; `logbooks_translate` and `logbooks_names`. The former function will translate the column names of any data.frame in package Logbooks used by the Iceland MFRI. The latter will give you both the English and Icelandic translation for any column name in any data.frame from package Logbooks.
+
+### To translate a data.frame to English...
+
+use \code{logbooks_translate} as follows
+
+``` {r, echo = TRUE}
+data(sild, package = "Logbooks")
+sild_en <- logbooks_translate(sild)
+head(names(sild))
+head(names(sild_en))
+```
+
+Note that logbooksTranslate is not setup at this time to translate the metadata data.sets (e.g. any of the ".name" data sets -- such as bv.name, dr.name, etc; or any of the ".teg" data sets -- humar.teg, raekja.teg, etc.). If you wish to see this implemented, please submit a request [here](https://github.com/pfrater/logbooksTranslate/issues).
+
+# Checking Names
+
+It is often desirable to double check what an Icelandic word means in English or to check the original Icelandic name in a data.frame. `logbooks_names` serves that purpose. Type in any combination of character or unquoted names in any of the logbooks data.frames and `logbooks_names` will return a data.frame showing the Icelandic word and its English translation.
+
+``` {r, echo = TRUE}
+logbooks_names(legggluggi, leggpoki)
+logbooks_names("lemon.sole", ufsi, "nafn.vorpu", spotted.catfish)
+```
+
+Happy translating!
